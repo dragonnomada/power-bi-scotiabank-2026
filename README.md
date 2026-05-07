@@ -4,6 +4,24 @@
 
 > Alan Badillo Salas
 
+## API Caso de Estudio de la Financiera
+
+> Ventas
+
+https://sandbox.geocarta.org/api/cursos/powerbi/lab/ventas
+
+> Pagos
+
+https://sandbox.geocarta.org/api/cursos/powerbi/lab/pagos
+
+> Amortizaciones
+
+https://sandbox.geocarta.org/api/cursos/powerbi/lab/amortizaciones
+
+> Historial de pagos
+
+https://sandbox.geocarta.org/api/cursos/powerbi/lab/historial
+
 ## Temario
 
 ### Módulo I - Fundamentos de Power BI y flujo analítico
