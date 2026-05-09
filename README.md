@@ -4,6 +4,14 @@
 
 > Alan Badillo Salas
 
+## Práctica 1
+
+> Sábado 9, mayo 2026
+
+Ya está disponible [Práctica 1](./P1.md), resuelve los pasos indicados y captura las pantallas que muestren los resultados.
+
+Crea un documento PDF con tu nombre completo, una breve introducción, los resultados alcanzados, la respuesta a las preguntas de análisis y una breve conclusión de la práctica. Opcionalmente, crea una portada con formato libre y envia el archivo a alan@belatrix.com o reservalo junto a tus retos diaros para entregarlos en un archivo ZIP antes de finalizar el curso.
+
 ## API Caso de Estudio de la Financiera
 
 > Ventas
