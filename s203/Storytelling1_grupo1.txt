@@ -1,0 +1,73 @@
+(historial pagos) - Un historial por cada plazo+1 en cada venta+ y pago*
+--------------------------
+[folio] x ([plazos] + 1) + ventas:folio + pagos:folio/numero 
+
+folios: 432 x *40 = 13,000 / 7,884
+
+752 0
+752 1
+...
+752 26
+
+-------------------------- <>
+
+Storytelling 1
+
+(dimFinanciamiento) - Un Financiamiento por cada Venta
+folio + equipo + plazos + precio + anticipo + interes + subtotal + total + semanal
+	+ fechaPrimerPago* + fechaUltimoPago* + fechaFinalPago*
+	+ montoTotalRecibido* + montoTotalEsperado*
+
+| fechaPrimerPago = MIN(fechaEspera)
+| fechaUltimoPago = MAX(fechaPago)
+| fechaFinalPago = MAX(fechaEspera)
+| montoTotalRecibido = SUM(montoRecibido)
+| montoTotalEsperado = SUM(montoEsperado)
+
+/ montoExcedenteEsperado = if montoTotalEsperado > total then montoTotalEsperado - total else 0
+/ montoExcedenteRecibido = if montoTotalRecibido > total then montoExcedenteRecibido - total else 0
+/ montoTotalFaltante = (montoTotalEsperado - montoExcedenteEsperado) - (montoTotalRecibido - montoExcedenteRecibido)
+/ diasActivo = (fechaUltimoPago - fechaPrimerPago) + 1semana
+/ diasTotales = (fechaFinalPago - fechaPrimerPago)
+/ diasFaltantes = fechaFinalPago - (fechaUltimoPago + 1semana)
+
+: Monto Recaudado Inicial = anticipo
+: % Recaudado Inicial = Monto Recaudado Inicial / precio
+: Monto En Riesgo = precio - anticipo
+: % En Riesgo = Monto En Riesgo / precio
+: % Progreso Activo = diasActivo / diasTotales
+: % Progreso Faltante = diasFaltantes / diasTotales
+: Monto Total Invertido = precio
+: Monto Total = total
+: Monto Total Esperado = montoTotalEsperado - montoExcedenteEsperado
+: Monto Total Recibido = montoTotalRecibido - montoExcedenteRecibido
+: Monto Total Faltante = Monto Total Esperado - Monto Total Recibido
+: % Progreso Esperado = Monto Total Esperado / Monto Total
+: % Progreso Recibido = Monto Total Recibido / Monto Total
+: % Progreso Faltante = Monto Total Faltante / Monto Total
+: % Retraso = % Progreso Esperado - % Progreso Pagado
+: Margen Total = Monto Total - Monto Total Invertido
+: Margen Total Esperado =  Monto Total Esperado - Monto Total Invertido
+: % Margen Total = Margen Total / Monto Total Invertido
+: % Margen Total Esperado = Margen Total Esperado / Monto Total Invertido
+
+
+
+
+
+
+
+!: Margen = total - precio
+!: % Margen = Margen / precio
+!: % Progreso Recibido = (montoTotalRecibido - montoExcedenteRecibido) / total
+!: % Progreso Esperado = (montoTotalEsperado - montoExcedenteEsperado) / total
+!: % Progreso Faltante = montoTotalFaltante / total
+
+montoEsperado + fechaEsperada
+montoPago + fechaPago
+precio + total
+
+--------------------------
+
+* Ventas acumuladas (mont)
+* 
