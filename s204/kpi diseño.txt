@@ -1,0 +1,20 @@
+KPI
+
+VALOR:     Observamos (valor actual)
+TENDENCIA: Temporalidad / Serie (fecha / calendario / orden)
+DESTINO:   Objetivo (valor objetivo)
+
+--------------
+Ventas
+VALOR:     Ventas diarias/mensuales/trimestrales/anuales
+TENDENCIA: diarias/mensuales/trimestrales/anuales
+DESTINO:   15 Ventas diarias/mensuales/trimestrales/anuales
+
+--------------
+% Avance
+VALOR:     % Avance diarias/mensuales/trimestrales/anuales
+TENDENCIA: diarias/mensuales/trimestrales/anuales
+DESTINO:   100% Avance diarias/mensuales/trimestrales/anuales
+
+--------------
+Morosidad / Cartera vencida / % Progresión / % Retención

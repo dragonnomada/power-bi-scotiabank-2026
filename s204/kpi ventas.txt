@@ -1,0 +1,10 @@
+MEDIDA Ventas
+
+Tendencia:
+- Fecha Inicial (año, trimestre, mes, dia, ..., años+mes)
+- Fecha Activa  (año, trimestre, mes, dia, ..., años+mes)
+- Fecha Final   (año, trimestre, mes, dia, ..., años+mes)
+
+META 22 ventas al mes
+
+<>

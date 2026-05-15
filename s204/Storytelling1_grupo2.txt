@@ -1,0 +1,96 @@
+Storytelling 1 - Narrativa de los financiamientos
+
+(dimFinanciamiento '432) - Un financiamiento por venta
+
+# Reducir el historial de pagos a una narrativa por venta/financiamiento
+
+folio              ----> REPITE UNIFORME POR CADA HISTORIA
+equipo             ----> REPITE UNIFORME POR CADA HISTORIA
+plazos             ----> REPITE UNIFORME POR CADA HISTORIA
+precio             ----> REPITE UNIFORME POR CADA HISTORIA
+anticipo           ----> REPITE UNIFORME POR CADA HISTORIA
+interes            ----> REPITE UNIFORME POR CADA HISTORIA
+subtotal           ----> REPITE UNIFORME POR CADA HISTORIA
+total              ----> REPITE UNIFORME POR CADA HISTORIA
+semanal            ----> REPITE UNIFORME POR CADA HISTORIA
+fechaEsperada      x---> ÚNICO POR CADA HISTORIA
+fechaPago          x---> ÚNICO POR CADA HISTORIA
+montoEsperado      x---> ÚNICO POR CADA HISTORIA
+montoRecibido      x---> ÚNICO POR CADA HISTORIA
+pagado             x---> ÚNICO POR CADA HISTORIA
+
+AGRUPAR folio 13k historias -> 432 financiamientos
+
+MEDIANA equipo
+MEDIANA plazos
+MEDIANA precio
+MEDIANA anticipo
+MEDIANA interes
+MEDIANA subtotal
+MEDIANA total
+MEDIANA semanal
+SUMA    montoEsperado >>> montoTotalEsperado
+SUMA    montoRecibido >>> montoTotalRecibido
+MIN     fechaEsperada >>> fechaInicialPago
+MAX     fechaPago     >>> fechaUltimoPago
+MAX     fechaEsperada >>> fechaFinalPago
+SUM     pagado        >>> pagos
+
+-----------------------------------
+
+(dimFinanciamiento)
+
+folio
+equipo
+plazos
+pagos
+precio
+anticipo
+interes
+subtotal
+total
+semanal
+montoTotalEsperado
+montoTotalRecibido
+montoTotalFaltanteAbsoluto
+montoTotalFaltanteRelativo
+fechaInicialPago
+fechaUltimoPago
+fechaFinalPago
+fechaActual
+diasActivos
+diasTotales
+diasFaltantes
+diasTranscurridos
+
+///////////////////////////////////
+
+Ventas = CONTAR FILAS folio
+Plazo Promedio = PROMEDIO plazos
+Dias Promedio Recuperacion = [Plazo Promedio] * 7
+Pagos Promedio = PROMEDIO pagos
+% Avance = DIVIDE pagos / (plazos + 1)
+Monto Inversion = SUMA precio
+Monto Recuperacion Inicial = SUMA anticipo
+Monto En Riesgo = [Monto Inversion] - [Monto Recuperacion Inicial]
+Monto Total = SUMA total
+Monto Margen = [Monto Total] - [Monto Inversion]
+Monto Esperado = SUMA montoTotalEsperado
+Monto Recibido = SUMA montoTotalRecibido
+Monto Faltante Absoluto = SUMA montoTotalFaltanteAbsoluto
+Monto Faltante Relativo = SUMA montoTotalFaltanteRelativo
+% Progreso Absoluto = DIVIDE [Monto Recibido] / [Monto Total]
+% Progreso Relativo = DIVIDE [Monto Recibido] / [Monto Esperado]
+% Progreso Esperado = DIVIDE [Monto Esperado] / [Monto Total]
+% Atrasado = [% Progreso Esperado] - [% Progreso Absoluto]
+% Progreso Faltante Absoluto = DIVIDE [Monto Faltante Absoluto] / [Monto Esperado]
+% Progreso Faltante Relativo = DIVIDE [Monto Faltante Relativo] / [Monto Esperado]
+% Avance Dias Activos = DIVIDE diasActivos / diasTotales
+% Avance Dias Transcurridos = DIVIDE diasTranscurridos / diasTotales
+Retraso Dias = SUMA diasTranscurridos - SUMA diasActivos
+% Retraso Dias = [% Avance Dias Transcurridos] - [% Avance Dias Activos]
+% Retraso Absoluto = DIVIDE [Retraso Dias] / diasTotales
+Dias Promedio Activo = PROMEDIO diasActivos
+% Avance Activo Promedio = PROMEDIO diasActivos / diasTotales
+% Avance Transcurridos Promedio = PROMEDIO diasTranscurridos / diasTotales
+% Retraso Promedio = [% Avance Transcurridos Promedio] - [% Avance Activo Promedio]

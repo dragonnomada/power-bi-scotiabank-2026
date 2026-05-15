@@ -1,0 +1,31 @@
+KPI
+
+MEDIDA / MÉTRICA (Total, % Avance, Diferencia, Promedio)
+
+-----------------------------------------------------------
+
+VALOR     - La última medida alcanzada en una tendencia
+
+TENDENCIA - Temporalidad / Serie que divide los valores 
+				(de las medidas)
+
+DESTINO   - El valor objetivo que se desea alcanzar
+
+-----------------------------------------------------------
+
+Ejemplo 1 - Ventas mensuales
+
+MEDIDA - Total Ventas
+
+VALOR    - [Total Ventas]
+TENDECIA - [Mes]
+DESTINO  - [Ventas Mensuales Objetivo]
+
+VALOR    - 13 ventas en abril 2026
+TENDECIA - (25 ven.ene, 21 v.feb, 16 v.mar, 13 v.abr)
+DESTINO  - 20 ventas mensuales objetivo
+
+13 / 20 (-45%) ROJO!
+
+AMARILLO / VERDE
+

@@ -1,0 +1,20 @@
+KPI
+
+VALOR     | ÚLTIMO
+TENDENCIA | PERIODICIDAD
+DESTINO   | OBJETIVO
+g
+Ventas Mensuales Objetivo = 20
+! Que todos los meses alcancemos 20 ventas
+
+Ventas Mensuales Promedio en una Ventana = WINDOW(...)
+! Que todos los meses alcancemos el promedio 
+	de las ventas de los últimos 2 meses
+	y los siguientes 2 meses
+
+Ventas Mensuales Promedio en una Ventana Objetivo = X - 2
+! Que todos los meses alcancemos dos ventas abajo 
+	del promedio de las ventas 
+	de los últimos 2 meses
+	y los siguientes 2 meses
+

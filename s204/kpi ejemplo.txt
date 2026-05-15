@@ -1,0 +1,35 @@
+TENDENCIA (Orden en que se explican y agrupan los registros de la tabla)
+
+SERIE / CLUSTERES / CATEGORIAS ORDENADAS / PERIODOS TEMPORALES
+
+------------------------------------------------------------------------
+
+(dimFinanciamiento) <>
+
+TENDENDENCIA
+Fecha Inicial - (Cuándo se originó la venta 
+			y cómo se comporta diario/mensual/trimestral/anual)
+
+Cuántas ventas diario/mensual/trimestral/anual hay
+KPI -> 
+	VALOR: 	   La última venta diario/mensual/trimestral/anual
+	TENDENCIA: diario/mensual/trimestral/anual
+	DESTINO:   Las ventas diario/mensual/trimestral/anual objetivo
+
+Fecha Pago - (Cuándo se emitió el último de una venta 
+			y cómo se comporta diario/mensual/trimestral/anual)
+
+Cuántas ventas registran su último movimiento diario/mensual/trimestral/anual
+KPI -> 
+	VALOR: 	   El último pago en un venta diario/mensual/trimestral/anual
+	TENDENCIA: diario/mensual/trimestral/anual
+	DESTINO:   Las ventas activas diario/mensual/trimestral/anual objetivo
+
+Fecha Final - (Cuándo se termina una venta 
+			y cómo se comporta diario/mensual/trimestral/anual)
+
+Cuántas ventas cierran diario/mensual/trimestral/anual
+KPI -> 
+	VALOR: 	   La últimas ventas cerradas diario/mensual/trimestral/anual
+	TENDENCIA: diario/mensual/trimestral/anual
+	DESTINO:   Las ventas cerradas diario/mensual/trimestral/anual objetivo
