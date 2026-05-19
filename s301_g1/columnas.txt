@@ -1,0 +1,46 @@
+<class 'pandas.DataFrame'>
+RangeIndex: 13921 entries, 0 to 13920
+Data columns (total 39 columns):
+ #   Column                          Non-Null Count  Dtype  
+---  ------                          --------------  -----  
+ 0   folio                           13921 non-null  int64  
+ 1   amortizacionId                  13921 non-null  str    
+ 2   numero                          13921 non-null  int64  
+ 3   concepto                        13921 non-null  str    
+ 4   plan                            13921 non-null  str    
+ 5   plazos                          13921 non-null  int64  
+ 6   precio                          13921 non-null  float64
+ 7   interes                         13921 non-null  float64
+ 8   anticipo                        13921 non-null  float64
+ 9   subtotal                        13921 non-null  float64
+ 10  semanal                         13921 non-null  float64
+ 11  total                           13921 non-null  float64
+ 12  saldoTotal                      13921 non-null  float64
+ 13  saldoActual                     13921 non-null  float64
+ 14  totalPagado                     13921 non-null  float64
+ 15  liquidacion                     13921 non-null  float64
+ 16  pagado                          13921 non-null  int64  
+ 17  pagoNumero                      7977 non-null   float64
+ 18  pagoPlazo                       13921 non-null  int64  
+ 19  pagoFechaEsperada               13921 non-null  str    
+ 20  pagoFechaRecibido               7986 non-null   str    
+ 21  pagoMontoEsperado               13921 non-null  float64
+ 22  pagoMontoRecibidoEfectivo       13921 non-null  float64
+ 23  pagoMontoRecibidoTarjeta        13921 non-null  float64
+ 24  pagoMontoRecibidoTransferencia  13921 non-null  float64
+ 25  pagoMontoRecibidoAjustado       13921 non-null  float64
+ 26  pagoMontoRecibido               13921 non-null  float64
+ 27  pagoMontoAportado               13921 non-null  float64
+ 28  pagoMontoExcedente              13921 non-null  float64
+ 29  pagoMontoFaltante               13921 non-null  float64
+ 30  pagoAnteriorId                  13477 non-null  str    
+ 31  pagoSiguienteId                 13477 non-null  str    
+ 32  vendedorRecibeFolio             7873 non-null   float64
+ 33  sucursalRecibeFolio             7977 non-null   float64
+ 34  vendedorOrigenFolio             7977 non-null   float64
+ 35  sucursalOrigenFolio             7977 non-null   float64
+ 36  liquidado                       13921 non-null  int64  
+ 37  amortizacionAnteriorId          13477 non-null  str    
+ 38  amortizacionSiguienteId         13477 non-null  str    
+dtypes: float64(24), int64(6), str(9)
+memory usage: 4.1 MB
