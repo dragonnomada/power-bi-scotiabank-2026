@@ -1,0 +1,1 @@
+SELECT folio, precio, total, total - precio AS margen FROM dbo.ventas;

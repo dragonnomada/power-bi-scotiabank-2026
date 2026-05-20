@@ -1,0 +1,1 @@
+SELECT MIN(total-precio) AS margenMin, AVG(total-precio) AS margenProm, MAX(total-precio) AS nargenMax, SUM(total-precio) AS margenSum, COUNT(total-precio) AS margenCont FROM dbo.ventas;
