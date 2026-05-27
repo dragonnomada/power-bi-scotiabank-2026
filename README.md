@@ -4,51 +4,6 @@
 
 > Alan Badillo Salas
 
-## Proyecto Final
-
-Propuesta de Proyecto del Curso de Power BI
-
-Proyecto Final Específico por Área
-
-El proyecto se debe aplicar a los datos e informes que trabajen en su área
-
-	1.	Título del Proyecto
-	2.	Descripción que resuma la composición y el objetivo del proyecto
-	3.	La ruta de especialización (Informes/Negocio, Modelo DAX, Integración SQL/Python)
-
-Fecha de Propuesta: Martes 19 de Mayo (Entrega por escrito en PDF con su nombre)
-Fecha de Entrega: Miércoles 27 de Mayo (Entrega PDF en formato de presentación con su nombre y portada)
-
-Entrega:
-
-Contexto y Objetivo
-Estrategia para alcanzar el objetivo
-Resultados
-	⁃	Captura de pantalla / Gráficas que de muestren que se alcanza el objetivo
-
-Cubrir las rúbricas:
-
-	•	Conectar un conjunto de datos histórico (CSV, Excel, API, SQL Server)
-	•	Modelar una tabla de hechos en Power Query (Modelo Estrella)
-	•	Determinar al menos 3 medidas/indicadores temporales (periodo semanal/mensual/anual)
-	•	Reportar al menos un KPI que se deduzca de las medidas/indicadores (MoM/YoY/YTD)
-
-## Práctica 2
-
-> Sábado 9, mayo 2026
-
-Ya está disponible [Práctica 2](./Practica2.md), resuelve los pasos indicados y captura las pantallas que muestren los resultados.
-
-Crea un documento PDF con tu nombre completo, una breve introducción, los resultados alcanzados, la respuesta a las preguntas de análisis y una breve conclusión de la práctica. Opcionalmente, crea una portada con formato libre y envia el archivo a alan@belatrix.com o reservalo junto a tus retos diaros para entregarlos en un archivo ZIP antes de finalizar el curso.
-
-## Práctica 1
-
-> Sábado 9, mayo 2026
-
-Ya está disponible [Práctica 1](./Practica1.md), resuelve los pasos indicados y captura las pantallas que muestren los resultados.
-
-Crea un documento PDF con tu nombre completo, una breve introducción, los resultados alcanzados, la respuesta a las preguntas de análisis y una breve conclusión de la práctica. Opcionalmente, crea una portada con formato libre y envia el archivo a alan@belatrix.com o reservalo junto a tus retos diaros para entregarlos en un archivo ZIP antes de finalizar el curso.
-
 ## API Caso de Estudio de la Financiera
 
 > Ventas
