@@ -1,0 +1,13 @@
+Origen = 
+
+Paso1 =
+
+#"Paso 1" =
+
+let 
+	var1=...,
+	var2=...,
+	---
+	varn=...
+in
+	varn	 

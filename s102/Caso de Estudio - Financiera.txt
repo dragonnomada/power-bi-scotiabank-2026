@@ -1,0 +1,23 @@
+Financiera -> Negocio de Financiamiento de Productos
+
+Venta <=> Financimiento
+
+Producto (precio, anticipo, interes, subtotal, total)
+
+subtotal <- (precio - anticipo) * interes
+total <- subtotal + anticipo
+
+Financiamiento (plan, plazos, semanal)
+
+plan: nuevo | renovacion
+plazos: 10 semanas
+
+precio: $10,000
+anticipo: $2,000
+interes: 150% (+ 50%)
+financiado: precio - anticipo = $8,000
+subtotal: financiado * anticipo = $12,000
+total: subtotal + anticipo = $14,000
+semanal: $1,200
+
+

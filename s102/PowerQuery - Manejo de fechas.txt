@@ -1,0 +1,27 @@
+> Una fecha especifica desde texto
+Origen = Date.FromText("2026-05-26")
+
+> Una fecha especifica construida desde una funcion directa
+Origen = #date(2026, 05, 26)
+---
+Origen = #date(year+1, 05, 26)
+
+> Una fecha especifica construida desde una funcion directa
+Origen = Date.From(DateTime.LocalNow())
+---
+Origen = Date.From(DateTime.FixedLocalNow())
+
+> Transformar una fecha agregando dias, meses, ...
+
+Origen = #date(2026, 5, 1),
+#"Una semana despues" = Date.AddDays(Origen, 7)
+---
+#"Una semana despues" = Date.AddWeeks(Origen, 1)
+
+Sean A, B dos fechas
+
+A - B >= 0 (Dias pasados / Dias que ya pasaron)
+A - B < 0  (Dias faltantes / Dias que faltan)
+
+
+
