@@ -1,0 +1,21 @@
+Compración de granularidad
+entre tablas
+
+Pagos (Muchos) / Ventas (Pocos)
+
+Fino: Pagos
+Muchos Pagos Agregan Pocas Ventas
+(Aglomerar/Agrupar/Sintetizar)
+
+Grueso: Ventas
+Pocas Ventas Rellenan Muchos Pagos
+(Desmenuzando)
+
+Una tabla de hechos se construye
+con los datos más finos posibles
+para responder un ANÁLISIS ESPECÍFICO
+
+Una tabla dimensiona se relaciona con
+una tabla de hechos para formar reportes
+extendidos de interés 
+en un ANÁLISIS NO ESPECÍFICO

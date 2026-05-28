@@ -1,0 +1,44 @@
+EXCEL -> PowerQuery -> Lenguaje M -> PowerBI
+
+Origen: CSV / Excel / SQL / API
+
+Transformación: Flujo de pasos
+	- Limpieza (Filtra / Reemplazar / Tipos)
+	- Columnas personalizadas (Columnas calculadas)
+	- Agrupación (Ventanas de concentrados / Síntesis) - Engrosar / Agregación
+	- Amplifación (Combinación / Réplica) - Desmenuzar / Rellenado
+
+Modelo de datos
+
+Estructurar tablas:
+	* TABLA DE HECHOS - La tabla más fina posible para un análisis específico
+	* TABLA DIMENSIONAL - Una tabla de soporte que extiende información no específica
+
+1. Dimensión:
+	¿Cuántos registros hay? Muchos - Profunda / Pocas - Regiones/Locaciones
+	Ejemplo: Tabla calendario
+	Profunda: Por día
+	Regional/Local: Por Mes / Por Trimestre / Por Año
+
+	Ejemplo: Tabla pagos
+	Profunda: # de Pago
+	Regional/Local: Por Sucursal / Por Vendedor / Por Venta / Por Mes / ...
+
+2. Granularidad:
+	¿Qué tan finos son los datos? Muchos - Fino/Particular / Pocos - Grueso/General
+	Ejemplo: Tabla de ventas (Reginal/Local)
+	Agrupación por vendedores para saber el promedio de venta:
+		[Fino a lo Grueso] - Análisis en Granularidad (De lo particular a lo general)
+		Muchas ventas se agrupan en pocos vendedores (promedio venta.total)
+
+	Ejemplo: Tabla de ventas (Reginal/Local)
+	Crecimiento en ventas de cada vendedor:
+		[Grueso a lo Fino] - Análisis en Finitud (De lo general a lo particular)
+		Muchas ventas se agrupan en pocos vendedor
+		Pocos vendedores se desmenuzan en muchas ventas (vendedor.promedioTotalVenta)
+
+
+
+
+
+
