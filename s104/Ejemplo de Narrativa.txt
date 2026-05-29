@@ -1,0 +1,34 @@
+Objetivo: Pago Cubierto / Pago Esperado
+
+Pago Cubierto:
+	fechaPagoRecibido
+		- (VACÍO): No pagado
+		- Fecha: Pagado
+	pagoMontoRecibido
+* if [fechaPagoRecibido] = null then 0 else [pagoMontoRecibido]
+
+Pago Esperado:
+	fechaEsperaPago
+		1. # de Pago
+		2. fechaAnticipo + # de Pago semanas
+	montoEsperado
+		1. Si # de Pago es 0: El valor del anticipo
+		2. Sino: El valor semanal
+	pagoEsperado
+		1. Si fechaEsperaPago es mayor a hoy: 0
+		2. Sino: montoEsperado
+
+Indicador: 
+	% Recuperación: Suma(Pago Cubierto) / Suma(Pago Esperado)
+	% Mora: 1 - % Avance
+	% Avance Pagos: Suma(Pagado) / Recuento(Pago Esperado)
+
+Línea de Tendencia: fecheEsperadaPago
+
+	- Mes a Mes (MoM) / Año con Año (YoY) / Periodo a la Fecha (YTD)
+
+FECHA ESPERADA | % Recuperación | Pago Cubierto | Pago Esperado | Fecha Recibido | Monto Recibo | Fecha Esperada | Monto Esperado | # de Pago | Folio
+
+
+
+

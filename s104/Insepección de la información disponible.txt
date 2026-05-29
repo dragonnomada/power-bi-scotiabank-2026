@@ -1,0 +1,31 @@
+Negocio:
+	Financiamiento de equipo
+	Venta: Concretar un financiamiento
+	Pago: Aplicar un abono al financiamiento
+
+Información:
+Tabla de ventas / Tabla de pagos
+
+Tabla de ventas x pagos (concentrado de los financiamientos)
+
+	X- Folio
+	V- ID Amortización
+	P- # de Pago
+	P- Concepto
+	V- Plan (Tipo de Cliente)
+	V- Plazos (Semanas de financiamiento)
+	V- Precio
+	V- Interés
+	V- Anticipo
+	V- Subtotal
+	V- Semanal
+	V- Total
+	P- pagoFechaRecibido
+	P- pagoMontoRecibido
+	P- vendedorRecibeFolio
+	P- sucursalRecibeFolio
+	P- vendedorOrigenFolio
+	P- sucursalOrigenFolio
+
+
+

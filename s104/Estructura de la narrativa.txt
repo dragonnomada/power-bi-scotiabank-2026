@@ -1,0 +1,42 @@
+PowerQuery (Origen) -> Power BI (Modelo Sem'antico)
+
+Modelo Estrella
+- Tablas de Hechos: Un an'alisis por cada hecho
+- Tablas de Dimensiones: Extensiones a los hechos
+
+Modelo Relacional
+
+Clave: Qui'en se relaciona
+Tipo: 	(1-*) Uno a Muchos (Grueso - Fino)
+	(*-1) Muchos a uno (Fino - Grueso)
+
+Storytelling - Narrativa de hechos hacia informes
+
+1. Establecer un objetivo de an'alis (hecho / reporte)
+2. Concentrar todos hechos que explican el objetivo
+3. Creamos las medidas que explican el objetivo
+	- La linea de tendencia (linea de tiempo / linea operaci'on)
+	- M'etrica de Observaci'on: 
+		Valor (Actual / Observado)
+		Meta (Esperado / Objetivo)
+4. Integramos un reporte usando la tabla de hechos, el valor y la meta (m'etricas)
+   explicadas en la l'inea de tendencia
+5. Representamos el reporte a tr'aves de informes gr'aficos/tabulares o alternativos
+
+Narrativa:
+¿Cuál es el objetivo del análisis?
+¿Qué hechos explican el objetivo?
+¿Qué indicador será observado para explicar el objetivo?
+¿Cuál es la línea de tendencia del indicador?
+	- ¿Quién explica el indicador?
+	- ¿A través de quién observamos el indicador?
+¿Cómo cambia el indicador a través de la línea de tendencia?
+	- ¿Podemos observar el cambio del indicador Mes a Mes / Año por Año?
+	- ¿Podemos observar el cambio del indicador acumulado a una fecha?
+	- ¿Podemos ordenar la tendencia través de un indicador?
+
+
+
+
+
+
