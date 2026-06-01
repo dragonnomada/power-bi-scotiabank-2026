@@ -1,0 +1,37 @@
+Storytelling
+
+1. Objetivo de analisis
+2. Medida / Indicador
+3. Tendencia (Temporal, Secuencial, ...)
+
+OBJETIVO DE ANALISIS <-> TABLA HECHOS
+
+--- Ejemplo 1
+
+Por cada venta queremos el numero de pagos cubiertos
+
+% Cobertura de Pagos >>> (Por cada venta)
+	- Folio
+	- Fecha del primer pago
+	- Pagos cubiertos (cuantos pagos tiene cada venta, [pagos])
+	- Pagos esperados (cuantos pagos deberia tener cada venta, [plazos] + 1)
+
+= DIVIDE(
+	SUM([pagos]),
+	SUM([plazos] + 1)
+)
+
+--- Ejemplo 2
+
+Por cada venta queremos el numero de pagos cubiertos
+
+% Avance de Financiamiento >>> (Por cada venta)
+	- Folio
+	- Fecha del primer pago
+	- Monto total cubierto (cuanto suman los montos recibidos, [montoTotalRecibido])
+	- Monto total esperado (a cuanto asciende la venta, [total])
+
+= DIVIDE(
+	SUM([montoTotalRecibido]),
+	SUM([total])
+)
