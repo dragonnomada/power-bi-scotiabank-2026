@@ -1,0 +1,111 @@
+--- Crear una tabla de calendario
+
+CALENDAR(<Fecha Inicial>, <Fecha Final>)
+
+	- Crea una tabla con la columna Date
+	  desde la fecha inicia hasta la final
+	  dia por dia (del dia 1 al dia N)
+
+Ejemplos:
+dimCalendarioFechaPagoEsperado = CALENDAR(
+	MIN(factMontoRecibidoEsperado[fechaPagoEsperado]), 
+	MAX(factMontoRecibidoEsperado[fechaPagoEsperado])
+)
+...
+dimCalendarioFechaPagoEsperado = CALENDAR(
+	DATE(2026, 1, 1), 
+	DATE(2026, 5, 31)
+)
+
+Nota: Si tabla tiene espacios se usan comillas simples 
+('Tabla 1', 'Pagos Fecha Esperada')
+
+--- Crear una medida simple (Escalar bajo el contexto/grupo)
+
+[Se usa el contexto actual]
+
+* Formal (Nombre de la Medida = ...)
+* Informal (...)
+
+SUM(<Columna>)
+
+	- <Columna> es 'Nombre de la Tabla'[Nombre de la Columa]
+
+Ejemplos:
+	SUM(factMontoRecibidoEsperado[montoRecibido])
+
+AVERAGE(<Columna>)
+MIN(<Columna>)
+MAX(<Columna>)
+
+
+--- Calcular una medida (Contextualizar una medida)
+
+[Se especifica bajo que contexto / Contexto especifico]
+
+* Formal (Observar una medida ya formalizada)
+* Informal (Calcular la medida simple en este momento)
+
+CALCULATE(
+	<Medida Formal/Informal>,
+	<Contexto: Venta | Filtro>
+)
+
+Ejemplos:
+CALCULATE(
+    [Suma Monto Recibido],
+    FILTER(
+        dimCalendarioFechaPagoEsperado,
+        dimCalendarioFechaPagoEsperado[Date].[Year] = 2025
+    )
+)
+...
+CALCULATE(
+    SUM(factMontoRecibidoEsperado[montoRecibido]),
+    FILTER(
+        dimCalendarioFechaPagoEsperado,
+        dimCalendarioFechaPagoEsperado[Date].[Year] = 2025
+    )
+)
+
+--- Independizar un fitro
+
+[Calcula el filtro sin considerar otros contextos]
+
+FILTER(
+    ALL(<Tabla>),
+    <Condicion>
+)
+
+--- Calcular variables previas al calculo
+
+VAR <Nombre 1> = <Medida Contextual>,
+    ...
+    <Nombre k> = <Medida Contextual>
+RETURN
+    CALCULATE(...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Modelo de la tendecia
+
+Estatica - No evoluciona de un mismo dato a otro (de un folio a otro)
+	* Informes descriptivos (no hay transversalidad del dato)
+	* No explicativo en el cruce de la tendencia
+
+Dinamica - Hay una evolucion de un mismo dato a otro (de un mes al siguiente)
+	* Informes concentrados (hay transversalidad del dato)
+	* Explica la evolucion del dato en el cruce de la tendencia
+

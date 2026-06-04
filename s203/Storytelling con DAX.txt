@@ -1,0 +1,22 @@
+Objetivos:
+1. Acumulado del Monto Recibido
+	- (Tendencia) Fecha Esperada del Pago
+	- (Medida) Suma Monto Recibido
+2. Acumulado del Monto Esperado
+	- (Tendencia) Fecha Esperada del Pago
+	- (Medida) Suma Monto Esperado
+3. Faltante
+	- (Tendencia) Fecha Esperada del Pago
+	- (Medida) Resta 
+		Acumulado del Monto Esperado -
+		Acumulado del Monto Recibido 
+4. % Recuperacion
+	- (Tendencia) Fecha Esperada del Pago
+	- (Medida) Divide 
+		Acumulado del Monto Recibido / 
+		Acumulado del Monto Esperado
+
+Tabla de Hechos
+	* Fecha Esperada del Pago
+	* Monto Esperado
+	* Monto Recibido

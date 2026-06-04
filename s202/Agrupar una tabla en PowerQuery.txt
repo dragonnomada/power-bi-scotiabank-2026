@@ -1,0 +1,13 @@
+Agregar una tabla agrupada
+con el indice de cada grupo
+
+    #"Tabla agrupada e indexada" = Table.Group(
+      #"Filas ordenadas1",
+      {"folio"},
+      {
+        {
+          "pagos",
+          each Table.AddIndexColumn(_, "numeroPago", 0, 1, Int64.Type)
+        }
+      }
+    ),
