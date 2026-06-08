@@ -1,0 +1,25 @@
+1. Power Query
+	(
+		Script por pasos ->
+		Origen ->
+		Transformaciones de datos ->
+		Quitar columnas ->
+		Limpiar los datos ->
+		Agregar columnas ->
+		Tabla de Datos Duros
+	)
+2. Storytelling
+	(
+		Modelo Estrella ->
+		Tabla de Hechos ->
+		Objetivo de Analisis ->
+		Informe
+	)
+3. DAX 
+	(
+		Medida -> 
+		Indicador -> 
+		MoM / YoY / YTD -> 
+		Meta -> KPI
+	)
+

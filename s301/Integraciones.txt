@@ -1,0 +1,57 @@
+Power Query -> Transformaciones de datos
+
+ALTERNATIVAS CON INTEGRACIONES:
+
+	PYTHON
+
+		Origen: CSV* / EXCEL* / API* / SQL* / ZIP* / ETL* / SAS*
+		
+		Transformaciones: Numpy | Pandas | PIL | OpenCV | OCR | Extractores
+
+		Salida: CSV* / Excel* / API* / SQL* / ZIP* / ETL* / SAS*
+
+		Visualizaciones: Matplotlib / Seaborn / Plotly
+		
+
+		-> REDUCIR LA CARGA EN LAS TRANSFORMACIONES
+			-> CONSTRUIR LAS TABLAS DE HECHOS Y DIMENSIONES DESDE PYTHON
+			-> Y PODER CARGARLAS FACILMENTE EN POWER BI
+
+		VENTAJAS:
+			- Mayor gobernanza de los datos (No se esta sujeto a politicas)
+			- Eficiencia y memoria (Podemos ocupar 100% de los recursos)
+			- Control de las salidas (Podemos importar/exportar libremente)
+			- Modelos avanzados DS/ML/DL (SARIMAX, REDES NEURONALES, CLUSTERING)
+
+		DESVENTAJAS:
+			- Lenguaje de programacion (Curva de aprendizaje 3 meses)
+			- Filtraciones de seguridad (expuestos a paquetes de internet)
+			- Requiere infraestructura (Tener instalado Python / Jupyter/ ...)
+
+	SQL
+
+		Origen: SQL
+	
+		Transformaciones: Consultas JOIN / Consultas View / Consultas Agregadas
+
+		Salida: Direct Query / Importaciones de Tablas SQL
+
+		-> REDUCIR LA CARGA EN LAS TRANSFORMACIONES
+			-> CONSTRUIR LAS TABLAS DE HECHOS Y DIMENSIONES DESDE CONSULTAS SQL
+			-> Y PODER CARGARLAS FACILMENTE EN POWER BI
+
+		VENTAJAS:
+			- Estructura estable de consultas de datos
+			- Motor SQL muy optimizado para consultas pesadas (JOIN / GROUP BY)
+			- Evitamos las transformaciones intermedias
+
+		DESVENTAJAS:
+			- Lenguaje de consultas (Curva de aprendizaje de 2 meses)
+			- Depedencia a un base de datos 
+				(infraestructura, mantenimiento, seguridad)
+			- Alimentar la base de datos
+
+
+
+
+
