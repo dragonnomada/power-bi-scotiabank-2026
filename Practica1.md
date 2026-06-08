@@ -24,8 +24,6 @@ Sigue los pasos para completar la práctica y responde las preguntas de análisi
 
 ### Pasos de la *Práctica 1*
 
-### Pasos de la *Práctica 1*
-
 > Paso 1 - Inspecciona el archivo de la Financiera para entender las columnas de interés que estaremos interactuando
 
 ![Paso 1](practica1/pasos/paso1.png)

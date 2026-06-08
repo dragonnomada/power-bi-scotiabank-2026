@@ -1,0 +1,23 @@
+CALCULATE(
+	<MEDIDA: FORMAL | INFORMAL>,
+	<CONTEXTO: VENTANA | FILTRO>, 
+	...(otros filtros)
+)
+
+--- Dependiente del contexto actual (ej. a los filtros del informe)
+CALCULATE(
+	SUM('Pagos Recibidos'[monto recibido]),
+	FILTER(
+		'Pagos Recibidos',
+		'Pagos Recibidos'[monto recibido] >= 10000
+	)
+)
+
+--- Independiente del contexto actual
+CALCULATE(
+	SUM('Pagos Recibidos'[monto recibido]),
+	FILTER(
+		ALL('Pagos Recibidos'),
+		'Pagos Recibidos'[monto recibido] >= 10000
+	)
+)

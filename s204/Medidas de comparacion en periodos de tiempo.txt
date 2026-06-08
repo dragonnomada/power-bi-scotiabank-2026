@@ -1,0 +1,13 @@
+Medidas de comparacion en periodos de tiempo
+
+Comparacion contra el pasado...
+
+MoM - Month over Month (Mes a Mes)
+YoY - Year over Year (Año a Año)
+YtD - Year to Date (Del comienzo del año a la fecha)
+
+[Medida] + [Date]
+
+[MoM Medida] (Como se compara la [Medida] mes a mes)
+[YoY Medida] (Como se compara la [Medida] año con año)
+[YtD Medida] (Como se compara la [Medida] desde comienzo del año)
