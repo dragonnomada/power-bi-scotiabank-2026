@@ -4,6 +4,35 @@
 
 > Alan Badillo Salas
 
+## Proyecto Final
+
+Propuesta de Proyecto del Curso de Power BI
+
+Proyecto Final Específico por Área
+
+El proyecto se debe aplicar a los datos e informes que trabajen en su área
+
+	1.	Título del Proyecto
+	2.	Descripción que resuma la composición y el objetivo del proyecto
+	3.	La ruta de especialización (Informes/Negocio, Modelo DAX, Integración SQL/Python)
+
+Fecha de Propuesta: Viernes 12 de Mayo (Entrega por escrito en PDF con su nombre)
+Fecha de Entrega: Viernes 19 de Mayo (Entrega PDF en formato de presentación con su nombre y portada)
+
+Entrega:
+
+Contexto y Objetivo
+Estrategia para alcanzar el objetivo
+Resultados
+	⁃	Captura de pantalla / Gráficas que de muestren que se alcanza el objetivo
+
+Cubrir las rúbricas:
+
+	•	Conectar un conjunto de datos histórico (CSV, Excel, API, SQL Server)
+	•	Modelar una tabla de hechos en Power Query (Modelo Estrella)
+	•	Determinar al menos 3 medidas/indicadores temporales (periodo semanal/mensual/anual)
+	•	Reportar al menos un KPI que se deduzca de las medidas/indicadores (MoM/YoY/YTD)
+
 ## API Caso de Estudio de la Financiera
 
 > Ventas
