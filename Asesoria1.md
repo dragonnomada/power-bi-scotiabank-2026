@@ -6,6 +6,10 @@
 
 ## Asesoría 1
 
+> Archivo de Power BI de la asesoría
+
+[Asesoria1.pbix](./Asesoria1/Asesoria1.pbix)
+
 ## Resumen
 
 En esta asesoría se resolvió cómo hacer el conteo de horas evitando fines de semana de una fecha inicial a una fecha final.
